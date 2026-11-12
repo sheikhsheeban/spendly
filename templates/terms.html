@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — Spendly{% endblock %}
+
+{% block head %}
+<style>
+    .legal-section { padding: 4rem 2rem; }
+    .legal-inner { max-width: 760px; margin: 0 auto; }
+    .legal-header { margin-bottom: 2.5rem; }
+    .legal-title {
+        font-family: var(--font-display);
+        font-size: 2.5rem;
+        color: var(--ink);
+        margin-bottom: 0.5rem;
+    }
+    .legal-updated { font-size: 0.9rem; color: var(--ink-muted); }
+    .legal-card {
+        background: var(--paper-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        padding: 2.5rem;
+    }
+    .legal-card h2 {
+        font-family: var(--font-display);
+        font-size: 1.4rem;
+        color: var(--ink);
+        margin: 2rem 0 0.75rem;
+    }
+    .legal-card h2:first-child { margin-top: 0; }
+    .legal-card p,
+    .legal-card li { color: var(--ink-soft); line-height: 1.7; margin-bottom: 0.75rem; }
+    .legal-card ul { padding-left: 1.25rem; }
+    @media (max-width: 600px) {
+        .legal-section { padding: 2.5rem 1rem; }
+        .legal-card { padding: 1.5rem; }
+        .legal-title { font-size: 2rem; }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<section class="legal-section">
+    <div class="legal-inner">
+        <div class="legal-header">
+            <h1 class="legal-title">Terms and Conditions</h1>
+            <p class="legal-updated">Last updated: November 2026</p>
+        </div>
+
+        <div class="legal-card">
+            <h2>1. Acceptance of Terms</h2>
+            <p>
+                By creating an account or using Spendly (the "Service"), you agree to be bound
+                by these Terms and Conditions. If you do not agree with any part of these terms,
+                please do not use the Service.
+            </p>
+
+            <h2>2. Use of Service</h2>
+            <p>Spendly is a personal expense tracking tool. When using the Service, you agree to:</p>
+            <ul>
+                <li>Provide accurate information when creating your account.</li>
+                <li>Keep your login credentials secure and confidential.</li>
+                <li>Use the Service only for lawful, personal purposes.</li>
+                <li>Not attempt to disrupt, reverse engineer, or gain unauthorised access to the Service.</li>
+            </ul>
+            <p>
+                We may suspend or terminate accounts that violate these terms.
+            </p>
+
+            <h2>3. User Data</h2>
+            <p>
+                You retain ownership of the expense data you enter into Spendly. We store this
+                data solely to provide the Service to you and do not sell it to third parties.
+                You are responsible for the accuracy of the information you record.
+            </p>
+            <p>
+                You may request deletion of your account and associated data at any time. For more
+                details on how we handle your information, please refer to our Privacy Policy.
+            </p>
+
+            <h2>4. Limitations of Liability</h2>
+            <p>
+                Spendly is provided "as is" without warranties of any kind. The Service is intended
+                as a personal record-keeping aid and does not constitute financial, tax, or
+                investment advice.
+            </p>
+            <p>
+                To the fullest extent permitted by law, Spendly shall not be liable for any indirect,
+                incidental, or consequential damages, including loss of data or financial loss,
+                arising from your use of or inability to use the Service.
+            </p>
+
+            <h2>5. Changes to Terms</h2>
+            <p>
+                We may update these Terms and Conditions from time to time. When we do, we will
+                revise the "Last updated" date above. Continued use of the Service after changes
+                are posted constitutes your acceptance of the revised terms.
+            </p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
